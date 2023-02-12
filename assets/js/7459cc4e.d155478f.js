@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrakun_js=self.webpackChunkrakun_js||[]).push([[4244],{5581:s=>{s.exports=JSON.parse('{"permalink":"/rakun-js/blog/tags/docusaurus","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

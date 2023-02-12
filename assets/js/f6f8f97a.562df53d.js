@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrakun_js=self.webpackChunkrakun_js||[]).push([[1040],{4551:a=>{a.exports=JSON.parse('{"label":"hello","permalink":"/rakun-js/blog/tags/hello","allTagsPath":"/rakun-js/blog/tags","count":2}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkrakun_js=self.webpackChunkrakun_js||[]).push([[2265],{5180:a=>{a.exports=JSON.parse('{"label":"facebook","permalink":"/rakun-js/blog/tags/facebook","allTagsPath":"/rakun-js/blog/tags","count":1}')}}]);
