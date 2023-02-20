@@ -22,6 +22,6 @@ export interface RakunFlux<T> extends RakunIteratorSource<T> {
     onErrorResume<E>(errorType: ErrorConstructor<E>, fn: (value: E) => RakunMonoOrFlux<T>): RakunFlux<T>;
     switchIfEmpty(source: RakunMonoOrFlux<any>): RakunFlux<T>;
     defaultIfEmpty(value: T): RakunFlux<T>;
-    blockFirst(contextManager?: RakunContextManager): T | Promise<T | null> | null;
+    blockFirst(contextManager?: RakunContextManager): T | Promise<T>;
     block(contextManager?: RakunContextManager): Promise<T[]> | T[];
 }

@@ -6,7 +6,7 @@ export declare class RakunIteratorImpl<T> implements RakunIterator<T> {
     get iterator(): this;
     array: () => RakunIterator<T[]>;
     block: (ctx: import("../..").RakunContextManager) => T[] | Promise<T[]>;
-    blockFirst: (ctx: import("../..").RakunContextManager) => T | Promise<T | null> | null;
+    blockFirst: (ctx: import("../..").RakunContextManager) => T | Promise<T>;
     defaultIfEmpty: (value: T) => RakunIterator<T>;
     doOnError: (handler: (error: any) => any) => RakunIterator<T>;
     doOnNext: (handler: (value: T) => any) => RakunIterator<T>;

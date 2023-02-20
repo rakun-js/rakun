@@ -1,6 +1,6 @@
 {
   "name": "rakun",
-  "version": "0.0.0-alpha.35",
+  "version": "0.0.0-alpha.41",
   "description": "",
   "types": "./types/src/index.d.ts",
   "main": "cjs/rakun.js",
@@ -14,7 +14,7 @@
     "native",
     "umd"
   ],
-  "repository": "https://github.com/ericfillipe1/rakun-js.git",
+  "repository": "https://github.com/rakun-js/rakun.git",
   "scripts": {
     "prepare": "install-peers",
     "build": "rollup -c && yarn tsc-dts",

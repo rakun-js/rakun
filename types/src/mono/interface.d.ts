@@ -20,7 +20,7 @@ export interface RakunMono<T> extends RakunIteratorSource<T> {
     onErrorResume<E>(errorType: ErrorConstructor<E>, fn: (value: E) => RakunMonoOrFlux<T>): RakunMono<T>;
     switchIfEmpty(source: RakunMonoOrFlux<T>): RakunMono<T>;
     defaultIfEmpty(value: T): RakunMono<T>;
-    blockFirst(contextManager?: RakunContextManager): Promise<T | null> | T | null;
+    blockFirst(contextManager?: RakunContextManager): Promise<T> | T;
     block(contextManager?: RakunContextManager): Promise<T[]> | T[];
     iterator: RakunIterator<T>;
 }

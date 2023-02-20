@@ -6,7 +6,7 @@ export interface RakunIterator<T> extends RakunIteratorSource<T> {
     next(): (ctx: RakunContextManager) => RakunNextResult<T>;
     array(): RakunIterator<T[]>;
     block(contextManager: RakunContextManager): T[] | Promise<T[]>;
-    blockFirst(contextManager: RakunContextManager): T | Promise<T | null> | null;
+    blockFirst(contextManager: RakunContextManager): T | Promise<T>;
     switchIfEmpty(source: RakunIteratorSource<T>): RakunIterator<T>;
     defaultIfEmpty(value: T): RakunIterator<T>;
     flatPipe<R>(fn: (value: T) => ValueOrPromise<RakunIteratorSource<R>>): RakunIterator<R>;
