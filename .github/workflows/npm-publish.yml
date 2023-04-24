@@ -26,8 +26,6 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
         run: |
-          if [ -n "$GITHUB_REF_NAME" ]; then
-            npm publish --tag $GITHUB_REF_NAME;
-          else
-            npm publish;
-          fi
+          jq '.version = "$GITHUB_REF_NAME"' package.json > tmp && mv tmp package.json
+          cat package.json
+          npm publish
