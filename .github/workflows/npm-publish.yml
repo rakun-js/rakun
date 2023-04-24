@@ -28,4 +28,8 @@ jobs:
         run: |
           jq ".version = \"$GITHUB_REF_NAME\"" package.json > tmp && mv tmp package.json
           cat package.json
-          npm publish
+          
+      - run: yarn publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
